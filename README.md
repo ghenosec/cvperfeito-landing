@@ -2,33 +2,33 @@
 
 ## Sobre o projeto
 
-Este projeto é a landing page do **cvPERFEITO**, uma plataforma focada em análise, correção e otimização de currículos com apoio de inteligência artificial.
+Este projeto e a landing page do [cvPERFEITO](https://cv-perfeito.vercel.app/), uma plataforma focada em analise, correcao e otimizacao de curriculos com apoio de inteligencia artificial.
 
-A página foi pensada para apresentar o produto de forma clara e persuasiva, destacando:
+A pagina foi pensada para apresentar o produto de forma clara e persuasiva, destacando:
 
-- o problema de currículos rejeitados por sistemas ATS
-- os benefícios da otimização com IA
+- o problema de curriculos rejeitados por sistemas ATS
+- os beneficios da otimizacao com IA
 - a proposta de valor do produto
-- prova social, comparação visual e FAQ
-- caminhos de conversão para análise gratuita e contratação
+- prova social, comparacao visual e FAQ
+- caminhos de conversao para analise gratuita e contratacao
 
-O objetivo principal da landing é **converter visitantes em usuários**, conduzindo a navegação até os fluxos principais do produto.
+O objetivo principal da landing e **converter visitantes em usuarios**, conduzindo a navegacao ate os fluxos principais do produto.
 
-## Objetivo da implementação
+## Objetivo da implementacao
 
-A aplicação foi estruturada para funcionar como uma página institucional e comercial de alta conversão, com foco em:
+A aplicacao foi estruturada para funcionar como uma pagina institucional e comercial de alta conversao, com foco em:
 
-- comunicação rápida da proposta do produto
-- organização modular por seções
+- comunicacao rapida da proposta do produto
+- organizacao modular por secoes
 - boa performance de carregamento
-- adaptação para desktop e mobile
-- facilidade de manutenção e evolução
+- adaptacao para desktop e mobile
+- facilidade de manutencao e evolucao
 
-## Como foi construída
+## Como foi construida
 
-O projeto foi desenvolvido com **Next.js** usando a arquitetura **App Router**, com a página principal montada a partir de componentes independentes.
+O projeto foi desenvolvido com **Next.js** usando a arquitetura **App Router**, com a pagina principal montada a partir de componentes independentes.
 
-Cada seção da landing foi separada em um componente próprio, o que ajuda na manutenção, reutilização e clareza do código. A composição principal acontece em `app/page.tsx`, que organiza a ordem de renderização da experiência:
+Cada secao da landing foi separada em um componente proprio, o que ajuda na manutencao, reutilizacao e clareza do codigo. A composicao principal acontece em `app/page.tsx`, que organiza a ordem de renderizacao da experiencia:
 
 - `Navbar`
 - `Hero`
@@ -43,11 +43,11 @@ Cada seção da landing foi separada em um componente próprio, o que ajuda na m
 - `CTASection`
 - `Footer`
 
-Essa divisão permite evoluir o conteúdo de cada bloco sem impactar o restante da página.
+Essa divisao permite evoluir o conteudo de cada bloco sem impactar o restante da pagina.
 
 ## Tecnologias utilizadas
 
-### Base da aplicação
+### Base da aplicacao
 
 - **Next.js 16**
 - **React 19**
@@ -61,64 +61,69 @@ Essa divisão permite evoluir o conteúdo de cada bloco sem impactar o restante 
 - **class-variance-authority**
 - **tailwind-merge**
 
-### Utilitários e componentes auxiliares
+### Utilitarios e componentes auxiliares
 
-- **Recharts** para gráficos
+- **Recharts** para graficos
 - **Embla Carousel** para comportamentos de carrossel
-- **React Hook Form** e **Zod** para formulários e validação
-- **Sonner** para notificações
-- **Vercel Analytics** para telemetria em produção
+- **React Hook Form** e **Zod** para formularios e validacao
+- **Sonner** para notificacoes
+- **Vercel Analytics** para telemetria em producao
 
 ## Estrutura do projeto
 
-### Diretórios principais
+### Diretorios principais
 
-- `app/`: estrutura principal da aplicação com layout global, página inicial e estilos globais
-- `components/landing/`: seções da landing page
-- `components/ui/`: biblioteca de componentes reutilizáveis de interface
-- `hooks/`: hooks utilitários
-- `lib/`: funções auxiliares
-- `styles/`: recursos adicionais de estilo, quando necessário
+- `app/`: estrutura principal da aplicacao com layout global, pagina inicial e estilos globais
+- `components/landing/`: secoes da landing page
+- `components/ui/`: biblioteca de componentes reutilizaveis de interface
+- `hooks/`: hooks utilitarios
+- `lib/`: funcoes auxiliares
+- `styles/`: recursos adicionais de estilo, quando necessario
+- `public/`: arquivos estaticos expostos pela aplicacao, incluindo favicon
 
 ### Arquivos importantes
 
-- `app/page.tsx`: compõe toda a landing page
-- `app/layout.tsx`: define metadados, fonte global e integração com analytics
+- `app/page.tsx`: compoe toda a landing page
+- `app/layout.tsx`: define metadados, fonte global, favicon e integracao com analytics
 - `app/globals.css`: centraliza estilos globais e base visual
 
-## Decisões de arquitetura
+## Decisoes de arquitetura
 
-- **Composição por seções**: cada bloco da landing é isolado em um componente específico
-- **Separação entre UI e conteúdo**: a página principal apenas organiza os blocos, sem concentrar toda a implementação
-- **Reaproveitamento de componentes**: a pasta `components/ui/` serve como base para construir novas telas com consistência visual
-- **Foco em performance**: uso de renderização estática para conteúdo institucional e estrutura leve para carregamento rápido
-- **SEO básico configurado**: metadados definidos no layout para melhorar indexação e compartilhamento
+- **Composicao por secoes**: cada bloco da landing e isolado em um componente especifico
+- **Separacao entre UI e conteudo**: a pagina principal apenas organiza os blocos, sem concentrar toda a implementacao
+- **Reaproveitamento de componentes**: a pasta `components/ui/` serve como base para construir novas telas com consistencia visual
+- **Foco em performance**: uso de renderizacao estatica para conteudo institucional e estrutura leve para carregamento rapido
+- **SEO basico configurado**: metadados definidos no layout para melhorar indexacao e compartilhamento
 
-## Experiência entregue
+## Experiencia entregue
 
-A landing foi construída para guiar o usuário por uma narrativa de conversão:
+A landing foi construida para guiar o usuario por uma narrativa de conversao:
 
 1. apresentar o problema
-2. demonstrar a solução
+2. demonstrar a solucao
 3. mostrar como funciona
-4. evidenciar benefícios
-5. reforçar confiança com comparação, depoimentos e FAQ
+4. evidenciar beneficios
+5. reforcar confianca com comparacao, depoimentos e FAQ
 6. conduzir para CTA e planos
 
-## Público-alvo
+## Publico-alvo
 
 O projeto atende principalmente pessoas que:
 
-- estão buscando emprego
-- precisam melhorar o currículo
+- estao buscando emprego
+- precisam melhorar o curriculo
 - querem aumentar compatibilidade com ATS
-- desejam uma apresentação mais profissional para processos seletivos
+- desejam uma apresentacao mais profissional para processos seletivos
 
 ## Resultado esperado
 
-Com essa estrutura, a landing serve como uma base sólida para:
+Com essa estrutura, a landing serve como uma base solida para:
 
-- campanhas de aquisição
-- validação de proposta comercial
-- testes de conversão
-- expansão futura do produto e de novas páginas
+- campanhas de aquisicao
+- validacao de proposta comercial
+- testes de conversao
+- expansao futura do produto e de novas paginas
+
+## Observacoes
+
+Este repositorio documenta a camada de apresentacao da landing page do cvPERFEITO. Ele prioriza clareza visual, modularidade e escalabilidade para futuras evolucoes do produto.
