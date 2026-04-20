@@ -3,19 +3,35 @@ import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap'
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'cvPERFEITO - Otimize seu Currículo com IA para Passar em ATS',
-  description: 'Análise, corrija e otimize seu currículo com inteligência artificial. Aumente suas chances de passar pelos sistemas ATS e impressionar recrutadores.',
-  keywords: ['currículo', 'ATS', 'otimização', 'IA', 'emprego', 'vaga', 'recrutamento'],
+  title: 'cvPERFEITO - Otimize seu Curriculo com IA para Passar em ATS',
+  description:
+    'Analise, corrija e otimize seu curriculo com inteligencia artificial. Aumente suas chances de passar pelos sistemas ATS e impressionar recrutadores.',
+  keywords: [
+    'curriculo',
+    'ATS',
+    'otimizacao',
+    'IA',
+    'emprego',
+    'vaga',
+    'recrutamento',
+  ],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon32x32.png', type: 'image/png', sizes: '32x32' },
+    ],
+  },
   openGraph: {
-    title: 'cvPERFEITO - Otimize seu Currículo com IA',
-    description: 'Analise e otimize seu currículo para passar em sistemas ATS e conseguir mais entrevistas.',
+    title: 'cvPERFEITO - Otimize seu Curriculo com IA',
+    description:
+      'Analise e otimize seu curriculo para passar em sistemas ATS e conseguir mais entrevistas.',
     type: 'website',
   },
 }
